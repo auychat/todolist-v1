@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
-import DateTimeInput from './components/DateTimeInput';
-import ContactInput from './components/ContactInput';
-import GenderInput from './components/GenderInput';
-import AgeSelectInput from './components/AgeSelectInput';
-import CheckboxInput from './components/CheckboxInput';
-import FileInput from './components/FileInput';
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 import {v4 as uuid}  from 'uuid';
@@ -81,28 +76,7 @@ class App extends Component {
         <div className="row">
           <div className="col-10 mx-auto col-md-8 mt-4">
             <h3 className="text-capitalize text-center">todo input</h3>
-              <DateTimeInput />
-
-              <div className="mx-auto mt-4">
-                <h3 className="text-capitalize text-center">Customer Contact Detail</h3>
-                <ContactInput />
-              </div>
-
-              <div className="mx-auto mt-4">
-                <GenderInput />
-              </div>
-
-              <div className="mx-auto mt-4">
-                <AgeSelectInput />
-              </div>
-
-              <div className="mx-auto mt-4">
-                <CheckboxInput />
-              </div>
-
-              <div className="mx-auto mt-4">
-                <FileInput buttonProps={{ color: "primary" }} />
-              </div>
+              
               
               <TodoInput 
                 item={this.state.item} 
