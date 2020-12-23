@@ -23,10 +23,10 @@ export default class TodoInput extends Component {
                 <div className="mx-auto mt-4">
                 <GenderInput />
                 </div>
-{/* 
+
                 <div className="mx-auto mt-4">
                 <AgeSelectInput />
-                </div> */}
+                </div>
 
                 <div className="mx-auto mt-4">
                 <CheckboxInput />
